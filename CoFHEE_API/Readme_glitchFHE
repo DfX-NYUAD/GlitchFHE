@@ -1,0 +1,51 @@
+import CoFHEE_main
+import try2
+CoFHEE_main.CoFHEE_tasks.fault_load_read_range(512, 514)
+CoFHEE_main.CoFHEE_tasks.fault_load_read_full_range(try2.coeff1, 0*1024, 1*1024)
+
+CoFHEE_main.CoFHEE_tasks.fault_load()
+
+CoFHEE_main.CoFHEE_tasks.fault_load_read_given_addr(try2.coeff5, [0, 1, 4, 5, 8, 9, 12, 13, 512, 516, 520, 524, 768, 772])
+
+def checkF():
+  CoFHEE_main.CoFHEE_tasks.fault_load_read_given_addr(try2.coeffFFFF, [0, 1, 4, 5, 8, 9, 12, 13, 512, 516, 520, 524, 768, 772])
+
+def checkZ():
+  CoFHEE_main.CoFHEE_tasks.fault_load_read_given_addr(try2.coeffZ, [0, 1, 4, 5, 8, 9, 12, 13, 512, 516, 520, 524, 768, 772])
+
+def loadF():
+  CoFHEE_main.CoFHEE_tasks.fault_load_coeff(try2.coeffFFFF, 1099510890497, 1024)
+
+def loadZ():
+  CoFHEE_main.CoFHEE_tasks.fault_load_coeff(try2.coeffZ, 1099510890497, 1024)
+
+checkF() ; loadF()
+
+import CoFHEE_main
+import try2
+
+f = open('output.txt', 'w')
+
+def checkF():
+  global f
+  CoFHEE_main.CoFHEE_tasks.fault_load_read_given_addr(try2.coeffFFFF, [0, 1, 4, 5, 8, 9, 12, 13, 512, 516, 520, 524, 768, 772], f)
+
+def checkZ():
+  global f
+  CoFHEE_main.CoFHEE_tasks.fault_load_read_given_addr(try2.coeffZ, [0, 1, 4, 5, 8, 9, 12, 13, 512, 516, 520, 524, 768, 772], f)
+
+def loadF():
+  CoFHEE_main.CoFHEE_tasks.fault_load_coeff(try2.coeffFFFF, 1099510890497, 1024)
+
+def loadZ():
+  CoFHEE_main.CoFHEE_tasks.fault_load_coeff(try2.coeffZ, 1099510890497, 1024)
+
+checkF() ; loadF()
+
+
+iter = 9
+voltage = 200
+um = "25um"
+f = open(f"output_{um}_{voltage}V_iter{iter}.txt", 'w')
+
+

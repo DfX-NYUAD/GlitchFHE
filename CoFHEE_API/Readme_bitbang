@@ -1,0 +1,3 @@
+#brew install libftdi-dev
+gcc reset.c -o reset -I /usr/local/include/ -L /usr/local/lib -lftdi
+./reset 
