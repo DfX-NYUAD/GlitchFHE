@@ -3,7 +3,7 @@
 ![CoFHEE_EM](https://github.com/user-attachments/assets/b07500ba-2464-4ac4-b257-dd46c53d5954)
 
 ## Repo Details
-This repository contains a software framework for fault injection and Python APIs to execute various polynomial operations in the [CoFHEE chip](https://github.com/momalab/CoFHEE).
+This repository contains a software framework for fault injection and Python APIs to execute various polynomial operations in the [CoFHEE chip](https://github.com/momalab/CoFHEE); One can inject faults during these API calls. There are also custom functions that can be used just to load and read back the polynomials to/from the internal SRAM memory. They're useful to find the right probe position in (x, y, z) dimension to inject required amount of faults to the polynomials loaded in the memory; by injecting the fault after loading to the memory, then reading it back to check if its corrupted and the corrupting amount.
 
 ## Interfacing with CoFHEE chip
 ### UART interface
