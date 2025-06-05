@@ -15,6 +15,8 @@ For the 1.2V core voltage supply, we used a simple [USB DC-DC converter](https:/
 
 ### Python APIs
 
+## Physical Attack Setup
+![image](https://github.com/user-attachments/assets/07eb0188-c751-45bd-b891-2f5dc6696689)
 
 ## License
 You can use our codes under the [GPLv3 license](https://www.gnu.org/licenses/gpl-3.0.en.html). 
