@@ -51,7 +51,8 @@ while (No fault detected):
 
     Read back seal_coeffs.coeff1 from internal SRAM:
         CoFHEE_main.CoFHEE_tasks.fault_load_read_full_range(
-            seal_coeffs.coeff1, 0, 8192)  
+            seal_coeffs.coeff1, 0, 8192)
+---
 ##### Physical Attack Setup
 ![image](https://github.com/user-attachments/assets/07eb0188-c751-45bd-b891-2f5dc6696689)
 
