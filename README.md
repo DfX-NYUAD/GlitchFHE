@@ -57,6 +57,7 @@ while (No fault detected):
 ## License
 You can use our codes under the [GPLv3 license](https://www.gnu.org/licenses/gpl-3.0.en.html). 
 
+<!--
 ## Cite us!
 If you wish to acknowledge or reference our work, please use the citation below:
-
+-->
