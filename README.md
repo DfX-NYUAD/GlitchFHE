@@ -24,7 +24,7 @@ We used the UART interface of CoFHEE to interact with the host PC. We used the F
 In addition to USB-to-UART conversion, the clock and I/O voltage of 3.3V required for CoFHEE are also sourced from the UM232R development board. And, one of the GPIO pins of the UM232R board can be used to control the reset pin of CoFHEE.
 For the 1.2V core voltage supply, we used a simple [USB DC-DC converter](https://a.co/d/jcYxmFo).
 
-##### [Python APIs](CoFHEE_API)
+##### __[Python APIs](CoFHEE_API)__
 __Important Files__: 
  - [CoFHEE Memory Map](CoFHEE_API/CoFHEE_header.py)
  - Files to update the FTDI parameters.
@@ -51,7 +51,7 @@ while (No fault detected):
     Read back seal_coeffs.coeff1 from internal SRAM:
         CoFHEE_main.CoFHEE_tasks.fault_load_read_full_range(seal_coeffs.coeff1, 0, 8192)
 ```
-##### Physical Attack Setup
+##### __Physical Attack Setup__
 ![image](https://github.com/user-attachments/assets/07eb0188-c751-45bd-b891-2f5dc6696689)
 
 ## License
