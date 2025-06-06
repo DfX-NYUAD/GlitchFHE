@@ -44,15 +44,13 @@ __Pseudo Code to detect the right probe position for a successful fault injectio
 ```text
 while (No fault detected):
     Load seal_coeffs.coeff1 to internal SRAM:
-        CoFHEE_main.CoFHEE_tasks.fault_load_coeff(
-            seal_coeffs.coeff1, 1099510890497, 8192)
+        CoFHEE_main.CoFHEE_tasks.fault_load_coeff(seal_coeffs.coeff1, 1099510890497, 8192)
 
     Change probe’s voltage and/or (x, y, z) coordinates
 
     Read back seal_coeffs.coeff1 from internal SRAM:
-        CoFHEE_main.CoFHEE_tasks.fault_load_read_full_range(
-            seal_coeffs.coeff1, 0, 8192)
----
+        CoFHEE_main.CoFHEE_tasks.fault_load_read_full_range(seal_coeffs.coeff1, 0, 8192)
+```
 ##### Physical Attack Setup
 ![image](https://github.com/user-attachments/assets/07eb0188-c751-45bd-b891-2f5dc6696689)
 
