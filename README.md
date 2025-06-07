@@ -10,7 +10,7 @@ In this repository, we provide both a software framework and a hardware framewor
 ## __Repo Details__
 ### __GlitchFHE Software Framework__
 
-This directory contains all the codes and corresponding documentation for the software-based experiments on:
+This directory (Software-Experiments) contains all the codes and corresponding documentation for the software-based experiments on:
 - CKKS and BFV implementations of polynomial evaluation
 - CKKS and BFV implementations of image classification
 - CKKS implementation of image processing
