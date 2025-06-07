@@ -31,11 +31,11 @@ For the 1.2V core voltage supply, we used a simple [USB DC-DC converter](https:/
 
 ##### __[Python APIs](CoFHEE_API)__
 ###### __Important Files__: 
- - [CoFHEE Memory Map](CoFHEE_API/CoFHEE_header.py)
- - Files to update the FTDI parameters.
-  -- Update CBUS# used as gpio to reset CoFHEE in [CoFHEE_API/reset.c](CoFHEE_API/reset.c)
-  -- Update VID/PID in (CoFHEE_API/reset.c)
-  -- Update ser.port and ser.baudrate in files [CoFHEE_API/boost_baudrate.py](CoFHEE_API/boost_baudrate.py) and [CoFHEE_API/CoFHEE_tasks.py](CoFHEE_API/CoFHEE_tasks.py).
+- [CoFHEE Memory Map](CoFHEE_API/CoFHEE_header.py)
+- Files to update the FTDI parameters.
+   - Update CBUS# used as gpio to reset CoFHEE in [CoFHEE_API/reset.c](CoFHEE_API/reset.c)
+   - Update VID/PID in (CoFHEE_API/reset.c)
+   - Update ser.port and ser.baudrate in files [CoFHEE_API/boost_baudrate.py (CoFHEE_API/boost_baudrate.py) and [CoFHEE_API/CoFHEE_tasks.py](CoFHEE_API/CoFHEE_tasks.py).
  - [CoFHEE Reset code](CoFHEE_API/reset.c) . Compile and execute this code to reset CoFHEE.
    
 ###### __Important Functions__:
