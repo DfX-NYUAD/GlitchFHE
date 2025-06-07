@@ -1,0 +1,936 @@
+In file included from numpy.cpp:1:
+numpy.h:8:1: error: ‘size_t’ does not name a type
+    8 | size_t sizeCeilPowerOfTwo(size_t n);
+      | ^~~~~~
+numpy.h:4:1: note: ‘size_t’ is defined in header ‘<cstddef>’; did you forget to ‘#include <cstddef>’?
+    3 | #include <vector>
+  +++ |+#include <cstddef>
+    4 | 
+numpy.h:18:32: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+   18 | template <class T> std::vector<size_t> argmax(const std::vector<std::vector<T>> & m);
+      |                                ^~~~~~
+      |                                std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.cpp:1:
+numpy.h:18:38: error: template argument 1 is invalid
+   18 | template <class T> std::vector<size_t> argmax(const std::vector<std::vector<T>> & m);
+      |                                      ^
+numpy.h:18:38: error: template argument 2 is invalid
+numpy.h:23:20: error: ‘size_t’ does not name a type
+   23 | template <class T> size_t countEqual(const std::vector<T> & a, const std::vector<T> & b);
+      |                    ^~~~~~
+numpy.h:23:20: note: ‘size_t’ is defined in header ‘<cstddef>’; did you forget to ‘#include <cstddef>’?
+numpy.h:39:94: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+   39 | reshape2d(const std::vector<std::vector<std::vector<std::vector<T>>>> & a, const std::vector<size_t> & dimensions);
+      |                                                                                              ^~~~~~
+      |                                                                                              std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.cpp:1:
+numpy.h:39:100: error: template argument 1 is invalid
+   39 | reshape2d(const std::vector<std::vector<std::vector<std::vector<T>>>> & a, const std::vector<size_t> & dimensions);
+      |                                                                                                    ^
+numpy.h:39:100: error: template argument 2 is invalid
+numpy.h:42:68: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+   42 | reshape4d(const std::vector<std::vector<T>> & m, const std::vector<size_t> & dimensions);
+      |                                                                    ^~~~~~
+      |                                                                    std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.cpp:1:
+numpy.h:42:74: error: template argument 1 is invalid
+   42 | reshape4d(const std::vector<std::vector<T>> & m, const std::vector<size_t> & dimensions);
+      |                                                                          ^
+numpy.h:42:74: error: template argument 2 is invalid
+numpy.h:45:71: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+   45 | reshapeOrder(const std::vector<std::vector<T>> & a, const std::vector<size_t> order);
+      |                                                                       ^~~~~~
+      |                                                                       std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.cpp:1:
+numpy.h:45:77: error: template argument 1 is invalid
+   45 | reshapeOrder(const std::vector<std::vector<T>> & a, const std::vector<size_t> order);
+      |                                                                             ^
+numpy.h:45:77: error: template argument 2 is invalid
+numpy.h:48:84: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+   48 | reshapeOrder(const std::vector<std::vector<std::vector<T>>> & a, const std::vector<size_t> order);
+      |                                                                                    ^~~~~~
+      |                                                                                    std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.cpp:1:
+numpy.h:48:90: error: template argument 1 is invalid
+   48 | reshapeOrder(const std::vector<std::vector<std::vector<T>>> & a, const std::vector<size_t> order);
+      |                                                                                          ^
+numpy.h:48:90: error: template argument 2 is invalid
+numpy.h:67:32: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+   67 | template <class T> std::vector<size_t> shape(const T & v);
+      |                                ^~~~~~
+      |                                std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.cpp:1:
+numpy.h:67:38: error: template argument 1 is invalid
+   67 | template <class T> std::vector<size_t> shape(const T & v);
+      |                                      ^
+numpy.h:67:38: error: template argument 2 is invalid
+numpy.h:69:32: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+   69 | template <class T> std::vector<size_t> shape(const std::vector<T> & v);
+      |                                ^~~~~~
+      |                                std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.cpp:1:
+numpy.h:69:38: error: template argument 1 is invalid
+   69 | template <class T> std::vector<size_t> shape(const std::vector<T> & v);
+      |                                      ^
+numpy.h:69:38: error: template argument 2 is invalid
+numpy.h:71:41: error: ‘size_t’ has not been declared
+   71 | template <class T> T shift(const T & n, size_t s);
+      |                                         ^~~~~~
+numpy.h:73:67: error: ‘size_t’ has not been declared
+   73 | template <class T> std::vector<T> shift(const std::vector<T> & n, size_t s);
+      |                                                                   ^~~~~~
+numpy.h:75:93: error: ‘size_t’ has not been declared
+   75 | template <class T> std::vector<std::vector<T>> shift(const std::vector<std::vector<T>> & n, size_t s);
+      |                                                                                             ^~~~~~
+numpy.h:77:119: error: ‘size_t’ has not been declared
+   77 | template <class T> std::vector<std::vector<std::vector<T>>> shift(const std::vector<std::vector<std::vector<T>>> & n, size_t s);
+      |                                                                                                                       ^~~~~~
+In file included from numpy.cpp:1:
+numpy.h:79:145: error: ‘size_t’ has not been declared
+   79 | template <class T> std::vector<std::vector<std::vector<std::vector<T>>>> shift(const std::vector<std::vector<std::vector<std::vector<T>>>> & n, size_t s);
+      |                                                                                                                                                 ^~~~~~
+numpy.h:91:68: error: ‘size_t’ has not been declared
+   91 | template <class T> std::vector<T> subset(const std::vector<T> & v, size_t begin, size_t end);
+      |                                                                    ^~~~~~
+numpy.h:91:82: error: ‘size_t’ has not been declared
+   91 | template <class T> std::vector<T> subset(const std::vector<T> & v, size_t begin, size_t end);
+      |                                                                                  ^~~~~~
+numpy.h:93:167: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+   93 | template <class T> std::vector<std::vector<std::vector<std::vector<T>>>> subvector(const std::vector<std::vector<std::vector<std::vector<T>>>> & x, const std::vector<size_t> & indices);
+      |                                                                                                                                                                       ^~~~~~
+      |                                                                                                                                                                       std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.cpp:1:
+numpy.h:93:173: error: template argument 1 is invalid
+   93 | template <class T> std::vector<std::vector<std::vector<std::vector<T>>>> subvector(const std::vector<std::vector<std::vector<std::vector<T>>>> & x, const std::vector<size_t> & indices);
+      |                                                                                                                                                                             ^
+numpy.h:93:173: error: template argument 2 is invalid
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp: In function ‘std::vector<std::vector<T> > numpy::add(const std::vector<std::vector<T> >&, const std::vector<U>&)’:
+numpy.hpp:13:11: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+   13 |     for ( size_t i=0; i<a.size(); i++ )
+      |           ^~~~~~
+      |           std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:13:23: error: ‘i’ was not declared in this scope
+   13 |     for ( size_t i=0; i<a.size(); i++ )
+      |                       ^
+numpy.hpp:14:21: error: expected ‘;’ before ‘j’
+   14 |         for ( size_t j=0; j<a[0].size(); j++ )
+      |                     ^~
+      |                     ;
+numpy.hpp:14:27: error: ‘j’ was not declared in this scope
+   14 |         for ( size_t j=0; j<a[0].size(); j++ )
+      |                           ^
+numpy.hpp: In function ‘std::vector<std::vector<std::vector<std::vector<T> > > > numpy::add(const std::vector<std::vector<std::vector<std::vector<T> > > >&, const std::vector<U>&)’:
+numpy.hpp:32:11: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+   32 |     for ( size_t n=0; n<nItems; n++ )
+      |           ^~~~~~
+      |           std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:32:23: error: ‘n’ was not declared in this scope
+   32 |     for ( size_t n=0; n<nItems; n++ )
+      |                       ^
+numpy.hpp:33:21: error: expected ‘;’ before ‘i’
+   33 |         for ( size_t i=0; i<nRows; i++ )
+      |                     ^~
+      |                     ;
+numpy.hpp:33:27: error: ‘i’ was not declared in this scope
+   33 |         for ( size_t i=0; i<nRows; i++ )
+      |                           ^
+numpy.hpp:34:25: error: expected ‘;’ before ‘j’
+   34 |             for ( size_t j=0; j<nCols; j++ )
+      |                         ^~
+      |                         ;
+numpy.hpp:34:31: error: ‘j’ was not declared in this scope
+   34 |             for ( size_t j=0; j<nCols; j++ )
+      |                               ^
+numpy.hpp:35:29: error: expected ‘;’ before ‘k’
+   35 |                 for ( size_t k=0; k<nChannels; k++ )
+      |                             ^~
+      |                             ;
+numpy.hpp:35:35: error: ‘k’ was not declared in this scope
+   35 |                 for ( size_t k=0; k<nChannels; k++ )
+      |                                   ^
+numpy.hpp: In function ‘T numpy::add_vector(std::vector<T>&)’:
+numpy.hpp:47:15: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+   47 |         for ( size_t i=n; i<size; i++ ) v[i-n] += v[i];
+      |               ^~~~~~
+      |               std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:47:27: error: ‘i’ was not declared in this scope
+   47 |         for ( size_t i=n; i<size; i++ ) v[i-n] += v[i];
+      |                           ^
+numpy.hpp: At global scope:
+numpy.hpp:53:27: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+   53 | template <class T> vector<size_t>
+      |                           ^~~~~~
+      |                           std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:53:33: error: template argument 1 is invalid
+   53 | template <class T> vector<size_t>
+      |                                 ^
+numpy.hpp:53:33: error: template argument 2 is invalid
+numpy.hpp: In function ‘int numpy::argmax(const std::vector<std::vector<T> >&)’:
+numpy.hpp:56:12: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+   56 |     vector<size_t> v;
+      |            ^~~~~~
+      |            std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:56:18: error: template argument 1 is invalid
+   56 |     vector<size_t> v;
+      |                  ^
+numpy.hpp:56:18: error: template argument 2 is invalid
+numpy.hpp:57:17: error: expected ‘;’ before ‘i’
+   57 |     for ( size_t i=0; i<m.size(); i++ )
+      |                 ^~
+      |                 ;
+numpy.hpp:57:23: error: ‘i’ was not declared in this scope
+   57 |     for ( size_t i=0; i<m.size(); i++ )
+      |                       ^
+numpy.hpp:59:15: error: expected ‘;’ before ‘idx’
+   59 |         size_t idx = 0;
+      |               ^~~~
+      |               ;
+numpy.hpp:60:21: error: expected ‘;’ before ‘j’
+   60 |         for ( size_t j=0; j<m[0].size(); j++ )
+      |                     ^~
+      |                     ;
+numpy.hpp:60:27: error: ‘j’ was not declared in this scope
+   60 |         for ( size_t j=0; j<m[0].size(); j++ )
+      |                           ^
+numpy.hpp:61:33: error: ‘idx’ was not declared in this scope
+   61 |             if ( m[i][j] > m[i][idx] ) idx = j;
+      |                                 ^~~
+numpy.hpp:62:11: error: request for member ‘push_back’ in ‘v’, which is of non-class type ‘int’
+   62 |         v.push_back(idx);
+      |           ^~~~~~~~~
+numpy.hpp:62:21: error: ‘idx’ was not declared in this scope
+   62 |         v.push_back(idx);
+      |                     ^~~
+numpy.hpp: At global scope:
+numpy.hpp:81:20: error: ‘size_t’ does not name a type
+   81 | template <class T> size_t
+      |                    ^~~~~~
+numpy.hpp:1:1: note: ‘size_t’ is defined in header ‘<cstddef>’; did you forget to ‘#include <cstddef>’?
+  +++ |+#include <cstddef>
+    1 | #pragma once
+numpy.hpp: In function ‘std::vector<std::vector<T> > numpy::dot(const std::vector<std::vector<T> >&, const std::vector<std::vector<U> >&)’:
+numpy.hpp:98:11: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+   98 |     for ( size_t i=0; i<n; i++ )
+      |           ^~~~~~
+      |           std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:98:23: error: ‘i’ was not declared in this scope
+   98 |     for ( size_t i=0; i<n; i++ )
+      |                       ^
+numpy.hpp:100:21: error: expected ‘;’ before ‘j’
+  100 |         for ( size_t j=0; j<p; j++ )
+      |                     ^~
+      |                     ;
+numpy.hpp:100:27: error: ‘j’ was not declared in this scope
+  100 |         for ( size_t j=0; j<p; j++ )
+      |                           ^
+numpy.hpp:103:25: error: expected ‘;’ before ‘k’
+  103 |             for ( size_t k=0; k<m; k++ )
+      |                         ^~
+      |                         ;
+numpy.hpp:103:31: error: ‘k’ was not declared in this scope
+  103 |             for ( size_t k=0; k<m; k++ )
+      |                               ^
+numpy.hpp: At global scope:
+numpy.hpp:147:69: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+  147 | reshape2d(const vector<vector<vector<vector<T>>>> & a, const vector<size_t> & dimensions)
+      |                                                                     ^~~~~~
+      |                                                                     std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:147:75: error: template argument 1 is invalid
+  147 | reshape2d(const vector<vector<vector<vector<T>>>> & a, const vector<size_t> & dimensions)
+      |                                                                           ^
+numpy.hpp:147:75: error: template argument 2 is invalid
+numpy.hpp:163:53: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+  163 | reshape4d(const vector<vector<T>> & m, const vector<size_t> & dimensions)
+      |                                                     ^~~~~~
+      |                                                     std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:163:59: error: template argument 1 is invalid
+  163 | reshape4d(const vector<vector<T>> & m, const vector<size_t> & dimensions)
+      |                                                           ^
+numpy.hpp:163:59: error: template argument 2 is invalid
+numpy.hpp: In function ‘std::vector<std::vector<std::vector<std::vector<T> > > > numpy::reshape4d(const std::vector<std::vector<T> >&, const int&)’:
+numpy.hpp:166:19: error: invalid types ‘const int[int]’ for array subscript
+  166 |         dimensions[0], vector<vector<vector<T>>>(
+      |                   ^
+numpy.hpp:167:23: error: invalid types ‘const int[int]’ for array subscript
+  167 |             dimensions[1], vector<vector<T>>(
+      |                       ^
+numpy.hpp:168:27: error: invalid types ‘const int[int]’ for array subscript
+  168 |                 dimensions[2], vector<T>(dimensions[3]))));
+      |                           ^
+numpy.hpp:168:52: error: invalid types ‘const int[int]’ for array subscript
+  168 |                 dimensions[2], vector<T>(dimensions[3]))));
+      |                                                    ^
+numpy.hpp:169:5: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+  169 |     size_t i,j,k,l;
+      |     ^~~~~~
+      |     std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:170:5: error: ‘i’ was not declared in this scope
+  170 |     i=j=k=l=0;
+      |     ^
+numpy.hpp:170:7: error: ‘j’ was not declared in this scope
+  170 |     i=j=k=l=0;
+      |       ^
+numpy.hpp:170:9: error: ‘k’ was not declared in this scope
+  170 |     i=j=k=l=0;
+      |         ^
+numpy.hpp:170:11: error: ‘l’ was not declared in this scope
+  170 |     i=j=k=l=0;
+      |           ^
+numpy.hpp:177:32: error: invalid types ‘const int[int]’ for array subscript
+  177 |             if (l == dimensions[3])
+      |                                ^
+numpy.hpp:181:36: error: invalid types ‘const int[int]’ for array subscript
+  181 |                 if (k == dimensions[2])
+      |                                    ^
+numpy.hpp:185:40: error: invalid types ‘const int[int]’ for array subscript
+  185 |                     if (j == dimensions[1])
+      |                                        ^
+numpy.hpp:189:44: error: invalid types ‘const int[int]’ for array subscript
+  189 |                         if (i == dimensions[0])
+      |                                            ^
+numpy.hpp: At global scope:
+numpy.hpp:204:56: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+  204 | reshapeOrder(const vector<vector<T>> & a, const vector<size_t> order)
+      |                                                        ^~~~~~
+      |                                                        std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:204:62: error: template argument 1 is invalid
+  204 | reshapeOrder(const vector<vector<T>> & a, const vector<size_t> order)
+      |                                                              ^
+numpy.hpp:204:62: error: template argument 2 is invalid
+numpy.hpp: In function ‘std::vector<std::vector<T> > numpy::reshapeOrder(const std::vector<std::vector<T> >&, int)’:
+numpy.hpp:207:12: error: request for member ‘size’ in ‘o’, which is of non-class type ‘const int’
+  207 |     if ( o.size() != 2 ) throw "order must be of size 2";
+      |            ^~~~
+numpy.hpp:208:12: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+  208 |     vector<size_t> sizeA = { a.size(), a[0].size() };
+      |            ^~~~~~
+      |            std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:208:18: error: template argument 1 is invalid
+  208 |     vector<size_t> sizeA = { a.size(), a[0].size() };
+      |                  ^
+numpy.hpp:208:18: error: template argument 2 is invalid
+numpy.hpp:209:18: error: template argument 2 is invalid
+  209 |     vector<size_t> sizeR;
+      |                  ^
+numpy.hpp:210:20: error: there are no arguments to ‘begin’ that depend on a template parameter, so a declaration of ‘begin’ must be available [-fpermissive]
+  210 |     for ( auto e : o ) sizeR.push_back( sizeA[e] );
+      |                    ^
+numpy.hpp:210:20: note: (if you use ‘-fpermissive’, G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+numpy.hpp:210:20: error: there are no arguments to ‘end’ that depend on a template parameter, so a declaration of ‘end’ must be available [-fpermissive]
+numpy.hpp:210:30: error: request for member ‘push_back’ in ‘sizeR’, which is of non-class type ‘int’
+  210 |     for ( auto e : o ) sizeR.push_back( sizeA[e] );
+      |                              ^~~~~~~~~
+numpy.hpp:211:31: error: invalid types ‘int[int]’ for array subscript
+  211 |     vector<vector<T>> r( sizeR[0], vector<T>(sizeR[1]) );
+      |                               ^
+numpy.hpp:211:51: error: invalid types ‘int[int]’ for array subscript
+  211 |     vector<vector<T>> r( sizeR[0], vector<T>(sizeR[1]) );
+      |                                                   ^
+numpy.hpp:212:18: error: template argument 2 is invalid
+  212 |     vector<size_t> i = {0,0,0};
+      |                  ^
+numpy.hpp:213:12: error: invalid types ‘int[int]’ for array subscript
+  213 |     for ( i[0]=0; i[0]<sizeA[0]; i[0]++ )
+      |            ^
+numpy.hpp:213:20: error: invalid types ‘int[int]’ for array subscript
+  213 |     for ( i[0]=0; i[0]<sizeA[0]; i[0]++ )
+      |                    ^
+numpy.hpp:213:29: error: invalid types ‘int[int]’ for array subscript
+  213 |     for ( i[0]=0; i[0]<sizeA[0]; i[0]++ )
+      |                             ^
+numpy.hpp:213:35: error: invalid types ‘int[int]’ for array subscript
+  213 |     for ( i[0]=0; i[0]<sizeA[0]; i[0]++ )
+      |                                   ^
+numpy.hpp:214:16: error: invalid types ‘int[int]’ for array subscript
+  214 |         for ( i[1]=0; i[1]<sizeA[1]; i[1]++ )
+      |                ^
+numpy.hpp:214:24: error: invalid types ‘int[int]’ for array subscript
+  214 |         for ( i[1]=0; i[1]<sizeA[1]; i[1]++ )
+      |                        ^
+numpy.hpp:214:33: error: invalid types ‘int[int]’ for array subscript
+  214 |         for ( i[1]=0; i[1]<sizeA[1]; i[1]++ )
+      |                                 ^
+numpy.hpp:214:39: error: invalid types ‘int[int]’ for array subscript
+  214 |         for ( i[1]=0; i[1]<sizeA[1]; i[1]++ )
+      |                                       ^
+numpy.hpp:215:27: error: invalid types ‘const int[int]’ for array subscript
+  215 |                     r[ i[o[0]] ][ i[o[1]] ] = a[ i[0] ][ i[1] ];
+      |                           ^
+numpy.hpp:215:38: error: invalid types ‘const int[int]’ for array subscript
+  215 |                     r[ i[o[0]] ][ i[o[1]] ] = a[ i[0] ][ i[1] ];
+      |                                      ^
+numpy.hpp:215:51: error: invalid types ‘int[int]’ for array subscript
+  215 |                     r[ i[o[0]] ][ i[o[1]] ] = a[ i[0] ][ i[1] ];
+      |                                                   ^
+numpy.hpp:215:59: error: invalid types ‘int[int]’ for array subscript
+  215 |                     r[ i[o[0]] ][ i[o[1]] ] = a[ i[0] ][ i[1] ];
+      |                                                           ^
+numpy.hpp: At global scope:
+numpy.hpp:220:64: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+  220 | reshapeOrder(const vector<vector<vector<T>>> & a, const vector<size_t> order)
+      |                                                                ^~~~~~
+      |                                                                std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:220:70: error: template argument 1 is invalid
+  220 | reshapeOrder(const vector<vector<vector<T>>> & a, const vector<size_t> order)
+      |                                                                      ^
+numpy.hpp:220:70: error: template argument 2 is invalid
+numpy.hpp: In function ‘std::vector<std::vector<std::vector<T> > > numpy::reshapeOrder(const std::vector<std::vector<std::vector<T> > >&, int)’:
+numpy.hpp:223:12: error: request for member ‘size’ in ‘o’, which is of non-class type ‘const int’
+  223 |     if ( o.size() != 3 ) throw "order must be of size 3";
+      |            ^~~~
+numpy.hpp:224:12: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+  224 |     vector<size_t> sizeA = { a.size(), a[0].size(), a[0][0].size() };
+      |            ^~~~~~
+      |            std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:224:18: error: template argument 1 is invalid
+  224 |     vector<size_t> sizeA = { a.size(), a[0].size(), a[0][0].size() };
+      |                  ^
+numpy.hpp:224:18: error: template argument 2 is invalid
+numpy.hpp:225:18: error: template argument 2 is invalid
+  225 |     vector<size_t> sizeR;
+      |                  ^
+numpy.hpp:226:20: error: there are no arguments to ‘begin’ that depend on a template parameter, so a declaration of ‘begin’ must be available [-fpermissive]
+  226 |     for ( auto e : o ) sizeR.push_back( sizeA[e] );
+      |                    ^
+numpy.hpp:226:20: error: there are no arguments to ‘end’ that depend on a template parameter, so a declaration of ‘end’ must be available [-fpermissive]
+numpy.hpp:226:30: error: request for member ‘push_back’ in ‘sizeR’, which is of non-class type ‘int’
+  226 |     for ( auto e : o ) sizeR.push_back( sizeA[e] );
+      |                              ^~~~~~~~~
+numpy.hpp:228:18: error: invalid types ‘int[int]’ for array subscript
+  228 |             sizeR[0], vector<vector<T>>(
+      |                  ^
+numpy.hpp:229:22: error: invalid types ‘int[int]’ for array subscript
+  229 |                 sizeR[1], vector<T>(sizeR[2])
+      |                      ^
+numpy.hpp:229:42: error: invalid types ‘int[int]’ for array subscript
+  229 |                 sizeR[1], vector<T>(sizeR[2])
+      |                                          ^
+numpy.hpp:231:18: error: template argument 2 is invalid
+  231 |     vector<size_t> i = {0,0,0};
+      |                  ^
+numpy.hpp:232:12: error: invalid types ‘int[int]’ for array subscript
+  232 |     for ( i[0]=0; i[0]<sizeA[0]; i[0]++ )
+      |            ^
+numpy.hpp:232:20: error: invalid types ‘int[int]’ for array subscript
+  232 |     for ( i[0]=0; i[0]<sizeA[0]; i[0]++ )
+      |                    ^
+numpy.hpp:232:29: error: invalid types ‘int[int]’ for array subscript
+  232 |     for ( i[0]=0; i[0]<sizeA[0]; i[0]++ )
+      |                             ^
+numpy.hpp:232:35: error: invalid types ‘int[int]’ for array subscript
+  232 |     for ( i[0]=0; i[0]<sizeA[0]; i[0]++ )
+      |                                   ^
+numpy.hpp:233:16: error: invalid types ‘int[int]’ for array subscript
+  233 |         for ( i[1]=0; i[1]<sizeA[1]; i[1]++ )
+      |                ^
+numpy.hpp:233:24: error: invalid types ‘int[int]’ for array subscript
+  233 |         for ( i[1]=0; i[1]<sizeA[1]; i[1]++ )
+      |                        ^
+numpy.hpp:233:33: error: invalid types ‘int[int]’ for array subscript
+  233 |         for ( i[1]=0; i[1]<sizeA[1]; i[1]++ )
+      |                                 ^
+numpy.hpp:233:39: error: invalid types ‘int[int]’ for array subscript
+  233 |         for ( i[1]=0; i[1]<sizeA[1]; i[1]++ )
+      |                                       ^
+numpy.hpp:234:20: error: invalid types ‘int[int]’ for array subscript
+  234 |             for ( i[2]=0; i[2]<sizeA[2]; i[2]++ )
+      |                    ^
+numpy.hpp:234:28: error: invalid types ‘int[int]’ for array subscript
+  234 |             for ( i[2]=0; i[2]<sizeA[2]; i[2]++ )
+      |                            ^
+numpy.hpp:234:37: error: invalid types ‘int[int]’ for array subscript
+  234 |             for ( i[2]=0; i[2]<sizeA[2]; i[2]++ )
+      |                                     ^
+numpy.hpp:234:43: error: invalid types ‘int[int]’ for array subscript
+  234 |             for ( i[2]=0; i[2]<sizeA[2]; i[2]++ )
+      |                                           ^
+numpy.hpp:235:27: error: invalid types ‘const int[int]’ for array subscript
+  235 |                     r[ i[o[0]] ][ i[o[1]] ][ i[o[2]] ] = a[ i[0] ][ i[1] ][ i[2] ];
+      |                           ^
+numpy.hpp:235:38: error: invalid types ‘const int[int]’ for array subscript
+  235 |                     r[ i[o[0]] ][ i[o[1]] ][ i[o[2]] ] = a[ i[0] ][ i[1] ][ i[2] ];
+      |                                      ^
+numpy.hpp:235:49: error: invalid types ‘const int[int]’ for array subscript
+  235 |                     r[ i[o[0]] ][ i[o[1]] ][ i[o[2]] ] = a[ i[0] ][ i[1] ][ i[2] ];
+      |                                                 ^
+numpy.hpp:235:62: error: invalid types ‘int[int]’ for array subscript
+  235 |                     r[ i[o[0]] ][ i[o[1]] ][ i[o[2]] ] = a[ i[0] ][ i[1] ][ i[2] ];
+      |                                                              ^
+numpy.hpp:235:70: error: invalid types ‘int[int]’ for array subscript
+  235 |                     r[ i[o[0]] ][ i[o[1]] ][ i[o[2]] ] = a[ i[0] ][ i[1] ][ i[2] ];
+      |                                                                      ^
+numpy.hpp:235:78: error: invalid types ‘int[int]’ for array subscript
+  235 |                     r[ i[o[0]] ][ i[o[1]] ][ i[o[2]] ] = a[ i[0] ][ i[1] ][ i[2] ];
+      |                                                                              ^
+numpy.hpp: In function ‘std::vector<std::vector<std::vector<std::vector<T> > > > numpy::reshapeOrder(const std::vector<std::vector<std::vector<std::vector<T> > > >&, std::vector<int>)’:
+numpy.hpp:244:12: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+  244 |     vector<size_t> sizeA = { a.size(), a[0].size(), a[0][0].size(), a[0][0][0].size() };
+      |            ^~~~~~
+      |            std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:244:18: error: template argument 1 is invalid
+  244 |     vector<size_t> sizeA = { a.size(), a[0].size(), a[0][0].size(), a[0][0][0].size() };
+      |                  ^
+numpy.hpp:244:18: error: template argument 2 is invalid
+numpy.hpp:245:18: error: template argument 2 is invalid
+  245 |     vector<size_t> sizeR;
+      |                  ^
+numpy.hpp:246:30: error: request for member ‘push_back’ in ‘sizeR’, which is of non-class type ‘int’
+  246 |     for ( auto e : o ) sizeR.push_back( sizeA[e] );
+      |                              ^~~~~~~~~
+numpy.hpp:246:46: error: invalid types ‘int[int]’ for array subscript
+  246 |     for ( auto e : o ) sizeR.push_back( sizeA[e] );
+      |                                              ^
+numpy.hpp:248:14: error: invalid types ‘int[int]’ for array subscript
+  248 |         sizeR[0], vector<vector<vector<T>>>(
+      |              ^
+numpy.hpp:249:18: error: invalid types ‘int[int]’ for array subscript
+  249 |             sizeR[1], vector<vector<T>>(
+      |                  ^
+numpy.hpp:250:22: error: invalid types ‘int[int]’ for array subscript
+  250 |                 sizeR[2], vector<T>(sizeR[3])
+      |                      ^
+numpy.hpp:250:42: error: invalid types ‘int[int]’ for array subscript
+  250 |                 sizeR[2], vector<T>(sizeR[3])
+      |                                          ^
+numpy.hpp:252:18: error: template argument 2 is invalid
+  252 |     vector<size_t> i = {0,0,0,0};
+      |                  ^
+numpy.hpp:253:12: error: invalid types ‘int[int]’ for array subscript
+  253 |     for ( i[0]=0; i[0]<sizeA[0]; i[0]++ )
+      |            ^
+numpy.hpp:253:20: error: invalid types ‘int[int]’ for array subscript
+  253 |     for ( i[0]=0; i[0]<sizeA[0]; i[0]++ )
+      |                    ^
+numpy.hpp:253:29: error: invalid types ‘int[int]’ for array subscript
+  253 |     for ( i[0]=0; i[0]<sizeA[0]; i[0]++ )
+      |                             ^
+numpy.hpp:253:35: error: invalid types ‘int[int]’ for array subscript
+  253 |     for ( i[0]=0; i[0]<sizeA[0]; i[0]++ )
+      |                                   ^
+numpy.hpp:254:16: error: invalid types ‘int[int]’ for array subscript
+  254 |         for ( i[1]=0; i[1]<sizeA[1]; i[1]++ )
+      |                ^
+numpy.hpp:254:24: error: invalid types ‘int[int]’ for array subscript
+  254 |         for ( i[1]=0; i[1]<sizeA[1]; i[1]++ )
+      |                        ^
+numpy.hpp:254:33: error: invalid types ‘int[int]’ for array subscript
+  254 |         for ( i[1]=0; i[1]<sizeA[1]; i[1]++ )
+      |                                 ^
+numpy.hpp:254:39: error: invalid types ‘int[int]’ for array subscript
+  254 |         for ( i[1]=0; i[1]<sizeA[1]; i[1]++ )
+      |                                       ^
+numpy.hpp:255:20: error: invalid types ‘int[int]’ for array subscript
+  255 |             for ( i[2]=0; i[2]<sizeA[2]; i[2]++ )
+      |                    ^
+numpy.hpp:255:28: error: invalid types ‘int[int]’ for array subscript
+  255 |             for ( i[2]=0; i[2]<sizeA[2]; i[2]++ )
+      |                            ^
+numpy.hpp:255:37: error: invalid types ‘int[int]’ for array subscript
+  255 |             for ( i[2]=0; i[2]<sizeA[2]; i[2]++ )
+      |                                     ^
+numpy.hpp:255:43: error: invalid types ‘int[int]’ for array subscript
+  255 |             for ( i[2]=0; i[2]<sizeA[2]; i[2]++ )
+      |                                           ^
+numpy.hpp:256:24: error: invalid types ‘int[int]’ for array subscript
+  256 |                 for ( i[3]=0; i[3]<sizeA[3]; i[3]++ )
+      |                        ^
+numpy.hpp:256:32: error: invalid types ‘int[int]’ for array subscript
+  256 |                 for ( i[3]=0; i[3]<sizeA[3]; i[3]++ )
+      |                                ^
+numpy.hpp:256:41: error: invalid types ‘int[int]’ for array subscript
+  256 |                 for ( i[3]=0; i[3]<sizeA[3]; i[3]++ )
+      |                                         ^
+numpy.hpp:256:47: error: invalid types ‘int[int]’ for array subscript
+  256 |                 for ( i[3]=0; i[3]<sizeA[3]; i[3]++ )
+      |                                               ^
+numpy.hpp:257:25: error: invalid types ‘int[const value_type {aka const int}]’ for array subscript
+  257 |                     r[ i[o[0]] ][ i[o[1]] ][ i[o[2]] ][ i[o[3]] ] = a[ i[0] ][ i[1] ][ i[2] ][ i[3] ];
+      |                         ^
+numpy.hpp:257:36: error: invalid types ‘int[const value_type {aka const int}]’ for array subscript
+  257 |                     r[ i[o[0]] ][ i[o[1]] ][ i[o[2]] ][ i[o[3]] ] = a[ i[0] ][ i[1] ][ i[2] ][ i[3] ];
+      |                                    ^
+numpy.hpp:257:47: error: invalid types ‘int[const value_type {aka const int}]’ for array subscript
+  257 |                     r[ i[o[0]] ][ i[o[1]] ][ i[o[2]] ][ i[o[3]] ] = a[ i[0] ][ i[1] ][ i[2] ][ i[3] ];
+      |                                               ^
+numpy.hpp:257:58: error: invalid types ‘int[const value_type {aka const int}]’ for array subscript
+  257 |                     r[ i[o[0]] ][ i[o[1]] ][ i[o[2]] ][ i[o[3]] ] = a[ i[0] ][ i[1] ][ i[2] ][ i[3] ];
+      |                                                          ^
+numpy.hpp:257:73: error: invalid types ‘int[int]’ for array subscript
+  257 |                     r[ i[o[0]] ][ i[o[1]] ][ i[o[2]] ][ i[o[3]] ] = a[ i[0] ][ i[1] ][ i[2] ][ i[3] ];
+      |                                                                         ^
+numpy.hpp:257:81: error: invalid types ‘int[int]’ for array subscript
+  257 |                     r[ i[o[0]] ][ i[o[1]] ][ i[o[2]] ][ i[o[3]] ] = a[ i[0] ][ i[1] ][ i[2] ][ i[3] ];
+      |                                                                                 ^
+numpy.hpp:257:89: error: invalid types ‘int[int]’ for array subscript
+  257 |                     r[ i[o[0]] ][ i[o[1]] ][ i[o[2]] ][ i[o[3]] ] = a[ i[0] ][ i[1] ][ i[2] ][ i[3] ];
+      |                                                                                         ^
+numpy.hpp:257:97: error: invalid types ‘int[int]’ for array subscript
+  257 |                     r[ i[o[0]] ][ i[o[1]] ][ i[o[2]] ][ i[o[3]] ] = a[ i[0] ][ i[1] ][ i[2] ][ i[3] ];
+      |                                                                                                 ^
+numpy.hpp: At global scope:
+numpy.hpp:299:27: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+  299 | template <class T> vector<size_t>
+      |                           ^~~~~~
+      |                           std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:299:33: error: template argument 1 is invalid
+  299 | template <class T> vector<size_t>
+      |                                 ^
+numpy.hpp:299:33: error: template argument 2 is invalid
+numpy.hpp: In function ‘int numpy::shape(const T&)’:
+numpy.hpp:302:19: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+  302 |     return vector<size_t>();
+      |                   ^~~~~~
+      |                   std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:302:25: error: template argument 1 is invalid
+  302 |     return vector<size_t>();
+      |                         ^
+numpy.hpp:302:25: error: template argument 2 is invalid
+numpy.hpp: At global scope:
+numpy.hpp:305:27: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+  305 | template <class T> vector<size_t>
+      |                           ^~~~~~
+      |                           std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:305:33: error: template argument 1 is invalid
+  305 | template <class T> vector<size_t>
+      |                                 ^
+numpy.hpp:305:33: error: template argument 2 is invalid
+numpy.hpp: In function ‘int numpy::shape(const std::vector<T>&)’:
+numpy.hpp:308:12: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+  308 |     vector<size_t> sizes = { v.size() };
+      |            ^~~~~~
+      |            std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:308:18: error: template argument 1 is invalid
+  308 |     vector<size_t> sizes = { v.size() };
+      |                  ^
+numpy.hpp:308:18: error: template argument 2 is invalid
+numpy.hpp:310:30: error: request for member ‘push_back’ in ‘sizes’, which is of non-class type ‘int’
+  310 |     for (auto s : tmp) sizes.push_back(s);
+      |                              ^~~~~~~~~
+numpy.hpp: At global scope:
+numpy.hpp:315:20: error: ‘size_t’ has not been declared
+  315 | shift(const T & n, size_t s)
+      |                    ^~~~~~
+numpy.hpp:323:28: error: ‘size_t’ has not been declared
+  323 | shift(const vector<T> & n, size_t s)
+      |                            ^~~~~~
+numpy.hpp:331:36: error: ‘size_t’ has not been declared
+  331 | shift(const vector<vector<T>> & n, size_t s)
+      |                                    ^~~~~~
+numpy.hpp:339:44: error: ‘size_t’ has not been declared
+  339 | shift(const vector<vector<vector<T>>> & n, size_t s)
+      |                                            ^~~~~~
+numpy.hpp:347:52: error: ‘size_t’ has not been declared
+  347 | shift(const vector<vector<vector<vector<T>>>> & n, size_t s)
+      |                                                    ^~~~~~
+numpy.hpp:393:39: error: ‘size_t’ has not been declared
+  393 | vector<T> subset(const vector<T> & v, size_t begin, size_t end)
+      |                                       ^~~~~~
+numpy.hpp:393:53: error: ‘size_t’ has not been declared
+  393 | vector<T> subset(const vector<T> & v, size_t begin, size_t end)
+      |                                                     ^~~~~~
+numpy.hpp: In function ‘std::vector<T> numpy::subset(const std::vector<T>&, int, int)’:
+numpy.hpp:397:11: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+  397 |     for ( size_t i=begin; i<end; i++ )
+      |           ^~~~~~
+      |           std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:397:27: error: ‘i’ was not declared in this scope
+  397 |     for ( size_t i=begin; i<end; i++ )
+      |                           ^
+numpy.hpp: At global scope:
+numpy.hpp:403:69: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+  403 | subvector(const vector<vector<vector<vector<T>>>> & x, const vector<size_t> & indices)
+      |                                                                     ^~~~~~
+      |                                                                     std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:403:75: error: template argument 1 is invalid
+  403 | subvector(const vector<vector<vector<vector<T>>>> & x, const vector<size_t> & indices)
+      |                                                                           ^
+numpy.hpp:403:75: error: template argument 2 is invalid
+numpy.hpp: In function ‘std::vector<std::vector<std::vector<std::vector<T> > > > numpy::subvector(const std::vector<std::vector<std::vector<std::vector<T> > > >&, const int&)’:
+numpy.hpp:406:11: error: ‘size_t’ was not declared in this scope; did you mean ‘std::size_t’?
+  406 |     for ( size_t i=indices[0]; i<indices[1]; i++ )
+      |           ^~~~~~
+      |           std::size_t
+In file included from /usr/include/c++/11/bits/stl_algobase.h:59,
+                 from /usr/include/c++/11/vector:60,
+                 from numpy.h:3,
+                 from numpy.cpp:1:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:280:33: note: ‘std::size_t’ declared here
+  280 |   typedef __SIZE_TYPE__         size_t;
+      |                                 ^~~~~~
+In file included from numpy.h:97,
+                 from numpy.cpp:1:
+numpy.hpp:406:32: error: ‘i’ was not declared in this scope
+  406 |     for ( size_t i=indices[0]; i<indices[1]; i++ )
+      |                                ^
+numpy.hpp:406:41: error: invalid types ‘const int[int]’ for array subscript
+  406 |     for ( size_t i=indices[0]; i<indices[1]; i++ )
+      |                                         ^
+numpy.hpp:409:21: error: expected ‘;’ before ‘j’
+  409 |         for ( size_t j=indices[2]; j<indices[3]; j++ )
+      |                     ^~
+      |                     ;
+numpy.hpp:409:36: error: ‘j’ was not declared in this scope
+  409 |         for ( size_t j=indices[2]; j<indices[3]; j++ )
+      |                                    ^
+numpy.hpp:409:45: error: invalid types ‘const int[int]’ for array subscript
+  409 |         for ( size_t j=indices[2]; j<indices[3]; j++ )
+      |                                             ^
+numpy.hpp:412:25: error: expected ‘;’ before ‘k’
+  412 |             for ( size_t k=indices[4]; k<indices[5]; k++ )
+      |                         ^~
+      |                         ;
+numpy.hpp:412:40: error: ‘k’ was not declared in this scope
+  412 |             for ( size_t k=indices[4]; k<indices[5]; k++ )
+      |                                        ^
+numpy.hpp:412:49: error: invalid types ‘const int[int]’ for array subscript
+  412 |             for ( size_t k=indices[4]; k<indices[5]; k++ )
+      |                                                 ^
+numpy.hpp:415:29: error: expected ‘;’ before ‘l’
+  415 |                 for ( size_t l=indices[6]; l<indices[7]; l++ )
+      |                             ^~
+      |                             ;
+numpy.hpp:415:44: error: ‘l’ was not declared in this scope
+  415 |                 for ( size_t l=indices[6]; l<indices[7]; l++ )
+      |                                            ^
+numpy.hpp:415:53: error: invalid types ‘const int[int]’ for array subscript
+  415 |                 for ( size_t l=indices[6]; l<indices[7]; l++ )
+      |                                                     ^
+make: *** [Makefile:29: main] Error 1
