@@ -55,8 +55,8 @@ In ./polynomial_evaluation/SEAL/native/examples/4_bfv_basics.cpp, set the values
 
 We perform GlitchFHE 
 
-- on the BFV implementation of cryptonets - an image classification accelerator implementated in Microsoft SEAL-3.7.2 (https://github.com/microsoft/SEAL/tree/3.7.2). We have taken this implementatoon from [1][2]
-- on the CKKS implementation of cryptonets. We have modified the BFV-based cryptonets implementation from [1][2] to obtain this implementation
+- on the BFV implementation of cryptonets - an image classification accelerator implementated in Microsoft SEAL-3.7.2 (https://github.com/microsoft/SEAL/tree/3.7.2). We have modified this implementation by using  https://github.com/momalab/furbo
+- on the CKKS implementation of cryptonets. We have modified the BFV-based cryptonets implementation from https://github.com/momalab/furbo to obtain this implementation
 
 
 #### __File Information__
@@ -107,8 +107,3 @@ We perform GlitchFHE
 
 
 
-#### __References__
-
-[1] Chielle, E., Mazonka, O., Gamil, H., Tsoutsos, N. G., & Maniatakos, M. (2018). E3: A framework for compiling C++ programs with encrypted operands. Cryptology ePrint Archive, Report 2018/1013. Retrieved from https://ia.cr/2018/1013
-
-[2] Chielle, E., Mazonka, O., Gamil, H., & Maniatakos, M. (2022). Accelerating fully homomorphic encryption by bridging modular and bit-level arithmetic. In Proceedings of the 41st International Conference on Computer-Aided Design (ICCAD '22). Association for Computing Machinery. https://doi.org/10.1145/3508352.3549415
