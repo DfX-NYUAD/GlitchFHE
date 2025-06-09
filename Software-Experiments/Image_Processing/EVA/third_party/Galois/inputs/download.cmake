@@ -1,0 +1,1 @@
+file(DOWNLOAD http://iss.oden.utexas.edu/projects/galois/downloads/small_inputs_for_lonestar_test.tar.gz /home/dfx/projects/FIA_FHE/FHE_sim/EVA/third_party/Galois/inputs/lonestar-cpu-inputs.tar.gz SHOW_PROGRESS)

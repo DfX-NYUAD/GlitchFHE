@@ -1,0 +1,17 @@
+add_executable(betweennesscentrality-outer-cpu BetweennessCentralityOuter.cpp)
+add_dependencies(apps betweennesscentrality-outer-cpu)
+target_link_libraries(betweennesscentrality-outer-cpu PRIVATE Galois::shmem lonestar)
+install(TARGETS betweennesscentrality-outer-cpu DESTINATION "${CMAKE_INSTALL_BINDIR}" COMPONENT apps EXCLUDE_FROM_ALL)
+add_test_scale(small betweennesscentrality-outer-cpu -numOfSources=4 "${BASEINPUT}/scalefree/rmat15.gr")
+
+add_executable(betweennesscentrality-async-cpu BetweennessCentralityAsync.cpp)
+add_dependencies(apps betweennesscentrality-async-cpu)
+target_link_libraries(betweennesscentrality-async-cpu PRIVATE Galois::shmem lonestar)
+install(TARGETS betweennesscentrality-async-cpu DESTINATION "${CMAKE_INSTALL_BINDIR}" COMPONENT apps EXCLUDE_FROM_ALL)
+add_test_scale(small betweennesscentrality-async-cpu -numOfSources=4 "${BASEINPUT}/scalefree/rmat15.gr")
+
+add_executable(betweennesscentrality-level-cpu BetweennessCentralityLevel.cpp)
+add_dependencies(apps betweennesscentrality-level-cpu)
+target_link_libraries(betweennesscentrality-level-cpu PRIVATE Galois::shmem lonestar)
+install(TARGETS betweennesscentrality-level-cpu DESTINATION "${CMAKE_INSTALL_BINDIR}" COMPONENT apps EXCLUDE_FROM_ALL)
+add_test_scale(small betweennesscentrality-level-cpu -numOfSources=4 "${BASEINPUT}/scalefree/rmat15.gr")

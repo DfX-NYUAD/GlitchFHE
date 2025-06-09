@@ -1,0 +1,9 @@
+[  8%] Built target protobuf
+[ 69%] Built target galois_shmem
+Consolidate compiler generated dependencies of target eva
+[ 73%] Building CXX object eva/CMakeFiles/eva.dir/seal/seal.cpp.o
+[ 73%] Linking CXX static library libeva.a
+[ 95%] Built target eva
+[100%] Linking CXX shared module _eva.cpython-310-x86_64-linux-gnu.so
+[100%] Built target eva_py
+[100%] Built target python

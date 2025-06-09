@@ -1,0 +1,51 @@
+eva/seal/seal_executor.h:      for (auto &operand : term->getOperands()) {
+eva/seal/seal_executor.h:    auto args = term->getOperands();
+eva/ir/term.h:  const std::vector<Ptr> &getOperands() const;
+eva/ir/term.cpp:const vector<Term::Ptr> &Term::getOperands() const { return operands; }
+eva/ir/term.cpp:  for (const auto &operand : term.getOperands()) {
+eva/ir/program.cpp:    for (auto &operand : term->getOperands()) {
+eva/ir/program.cpp:      for (const auto &operand : term->getOperands()) {
+eva/ir/program.cpp:      for (const auto &operand : term->getOperands()) {
+eva/serialization/eva_serialization.cpp:      for (const auto &operand : term->getOperands()) {
+eva/serialization/eva_serialization.cpp:      for (const auto &operand : term->getOperands()) {
+eva/ckks/scales_checker.h:    auto &operands = term->getOperands();
+eva/ckks/rescaler.h:      for (auto &operand : term->getOperands()) {
+eva/ckks/lazy_relinearizer.h:    for (auto &op : term->getOperands()) {
+eva/ckks/lazy_relinearizer.h:    auto &operands = term->getOperands();
+eva/ckks/always_rescaler.h:        for (auto &operand : term->getOperands()) {
+eva/ckks/always_rescaler.h:    for (auto &operand : term->getOperands()) {
+eva/ckks/minimum_rescaler.h:    auto &operands = term->getOperands();
+eva/ckks/parameter_checker.h:    auto &operands = term->getOperands();
+eva/ckks/levels_checker.h:      for (auto &operand : term->getOperands()) {
+eva/ckks/levels_checker.h:      for (auto &operand : term->getOperands()) {
+eva/ckks/encode_inserter.h:    auto &operands = term->getOperands();
+eva/ckks/eager_waterline_rescaler.h:        for (auto &operand : term->getOperands()) {
+eva/ckks/eager_waterline_rescaler.h:        for (auto &operand : term->getOperands()) {
+eva/ckks/eager_waterline_rescaler.h:        for (auto &operand : term->getOperands()) {
+eva/ckks/eager_waterline_rescaler.h:    for (auto &operand : term->getOperands()) {
+eva/ckks/lazy_waterline_rescaler.h:      for (auto &operand : term->getOperands()) {
+eva/ckks/lazy_waterline_rescaler.h:        for (auto &operand : term->getOperands()) {
+eva/ckks/lazy_waterline_rescaler.h:        for (auto &operand : term->getOperands()) {
+eva/ckks/lazy_waterline_rescaler.h:        for (auto &operand : term->getOperands()) {
+eva/ckks/lazy_waterline_rescaler.h:        for (auto &operand : term->getOperands()) {
+eva/ckks/lazy_waterline_rescaler.h:    for (auto &operand : term->getOperands()) {
+eva/ckks/lazy_waterline_rescaler.h:    auto &operands = term->getOperands();
+eva/ckks/lazy_waterline_rescaler.h:    auto &operands = term->getOperands();
+eva/ckks/lazy_waterline_rescaler.h:    auto &operands = term->getOperands();
+eva/ckks/eager_relinearizer.h:    for (auto &op : term->getOperands()) {
+eva/ckks/eager_relinearizer.h:    auto &operands = term->getOperands();
+eva/ckks/encryption_parameter_selector.h:    auto &operands = term->getOperands();
+eva/common/reference_executor.cpp:  auto args = term->getOperands();
+eva/common/reduction_balancer.h:          for (auto &operand : term->getOperands()) {
+eva/common/reduction_balancer.h:          term->getOperands().begin(), term->getOperands().end(), 0,
+eva/common/reduction_balancer.h:      scale[term] = std::accumulate(term->getOperands().begin(),
+eva/common/reduction_balancer.h:                                    term->getOperands().end(), 0,
+eva/common/reduction_balancer.h:      for (auto &operand : term->getOperands()) {
+eva/common/multicore_program_traversal.h:          for (auto &operand : term->getOperands()) {
+eva/common/multicore_program_traversal.h:          for (auto &operand : term->getOperands()) {
+eva/common/multicore_program_traversal.h:          for (auto &operand : term->getOperands()) {
+eva/common/type_deducer.h:    auto &operands = term->getOperands();
+eva/common/program_traversal.h:    for (auto &operand : isForward ? term->getOperands() : term->getUses()) {
+eva/common/program_traversal.h:      for (auto &succ : isForward ? term->getUses() : term->getOperands()) {
+eva/common/program_traversal.h:      for (auto &succ : isForward ? term->getUses() : term->getOperands()) {
+eva/common/constant_folder.h:    auto &args = term->getOperands();
