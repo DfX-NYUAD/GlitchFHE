@@ -1,6 +1,6 @@
 # __GlitchFHE - Attacking Fully Homomorphic Encryption (FHE) Using Fault Injection__
 
-![CoFHEE_EM](images/CoFHEE_EM.png)
+![CoFHEE_EM](Images/CoFHEE_EM.png)
 
 ## __Big Picture__
 GlitchFHE framework allows controlled Electro Magnetic (EM) fault injection during FHE evaluation operations, aiming to minimize the mean squared error (MSE) of the decrypted ciphertext relative to that obtained without fault injection. The main challenge addressed by GlitchFHE is determining the optimal timing and magnitude of the fault injection to achieve low MSE.
@@ -57,7 +57,7 @@ while (No fault detected):
         CoFHEE_main.CoFHEE_tasks.fault_load_read_full_range(seal_coeffs.coeff1, 0, 8192)
 ```
 ##### __Physical Attack Setup__
-![Attack_Setup](images/Attack_Setup.png)
+![Attack_Setup](Images/Attack_Setup.png)
 
 ## License
 You can use our codes under the [GPLv3 license](https://www.gnu.org/licenses/gpl-3.0.en.html). 
