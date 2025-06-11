@@ -9,7 +9,7 @@ This directory contains all the codes and corresponding documentation for the so
 
 ### __Polynomial Evaluation__
 
-We peform GlitchFHE on the CKKS and BFV implementations of polynomial evaluation that are opensourced by Microsoft SEAL-3.6 (https://github.com/microsoft/SEAL/tree/3.6.0)
+We perform GlitchFHE on the CKKS and BFV implementations of polynomial evaluation that are opensourced by Microsoft SEAL-3.6 (https://github.com/microsoft/SEAL/tree/3.6.0)
 
 
 #### __Installation Instructions__
@@ -54,7 +54,7 @@ In ./polynomial_evaluation/SEAL/native/examples/4_ckks_basics.cpp, set the value
 
 We perform GlitchFHE 
 
-- on the BFV implementation of cryptonets - an image classification accelerator implementated in Microsoft SEAL-3.7.2 (https://github.com/microsoft/SEAL/tree/3.7.2). We have modified this implementation by using  https://github.com/momalab/furbo
+- on the BFV implementation of cryptonets, an image classification accelerator implemented in Microsoft SEAL-3.7.2 (https://github.com/microsoft/SEAL/tree/3.7.2). We have modified this implementation by using  https://github.com/momalab/furbo
 - on the CKKS implementation of cryptonets. We have modified the BFV-based cryptonets implementation from https://github.com/momalab/furbo to obtain this implementation
 
 
@@ -69,7 +69,7 @@ We perform GlitchFHE
 - The modified SEAL directories are provided in ./cryptonets/seal_standalone_bfv_attack/e3_seal.372/SEAL/ and ./cryptonets/seal_standalone_ckks_attack/e3_seal.372/SEAL/
 - Please follow instructions ./cryptonets/seal_standalone_bfv_attack/e3_seal.372/SEAL/README.md and ./cryptonets/seal_standalone_ckks_attack/e3_seal.372/SEAL/README.md to build SEAL respectively for attacks on BFV and CKKS-based cryptonets
 
-- Note that we have modified the corresponding SEAL repositories to enable Fault injection
+- Note that we have modified the corresponding SEAL repositories to enable fault injection
 
 - Copy the corresponding lib.seal.a files to seal_unx/target and seal_unx/native directories
 
