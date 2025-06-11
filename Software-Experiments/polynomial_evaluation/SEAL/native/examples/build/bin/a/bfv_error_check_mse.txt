@@ -1,0 +1,2 @@
+0 1 0 Equal 25bits 0 Equal 33bits 0 Equal 2bits 
+2 0 Equal 24bits 0 Equal 33bits 0 Equal 0bits 

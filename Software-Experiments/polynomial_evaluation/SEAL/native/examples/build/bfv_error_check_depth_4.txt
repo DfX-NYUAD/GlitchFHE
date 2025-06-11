@@ -1,0 +1,11 @@
+0 100 Equal 19bits Equal 33bits 4155.23 4155.23 Not-Equal 0bits 
+200 Equal 18bits Equal 33bits 4145.07 4145.07 Not-Equal 0bits 
+300 Equal 17bits Equal 33bits 4129.85 4129.85 Not-Equal 0bits 
+400 Equal 16bits Equal 33bits 4119.9 4119.9 Not-Equal 0bits 
+500 Equal 17bits Equal 33bits 4109.63 4109.63 Not-Equal 0bits 
+600 Equal 16bits Equal 33bits 4103.96 4103.96 Not-Equal 0bits 
+700 Equal 16bits Equal 33bits 4096.37 4096.37 Not-Equal 0bits 
+800 Equal 16bits Equal 33bits 4094.01 4094.01 Not-Equal 0bits 
+900 Equal 15bits Equal 33bits 4087.48 4087.48 Not-Equal 0bits 
+1000 Equal 16bits Equal 33bits 4088.33 4088.33 Not-Equal 0bits 
+1100 Equal 15bits Equal 33bits 4083.63 4083.63 Not-Equal 0bits 

@@ -1,0 +1,525 @@
+Microsoft SEAL version: 3.6.4
++---------------------------------------------------------+
+| The following examples should be executed while reading |
+| comments in associated files in native/examples/.       |
++---------------------------------------------------------+
+| Examples                   | Source Files               |
++----------------------------+----------------------------+
+| 1. BFV Basics              | 1_bfv_basics.cpp           |
+| 2. Encoders                | 2_encoders.cpp             |
+| 3. Levels                  | 3_levels.cpp               |
+| 4. CKKS Basics             | 4_ckks_basics.cpp          |
+| 5. Rotation                | 5_rotation.cpp             |
+| 6. Serialization           | 6_serialization.cpp        |
+| 7. Performance Test        | 7_performance.cpp          |
++----------------------------+----------------------------+
+[      0 MB] Total allocation from the memory pool
+
+> Run example (1 ~ 7) or exit (0): 
++-------------------------------------+
+|         Example: BFV Basics         |
++-------------------------------------+
+punctured_prod_array_.get
+18403960115619840001
+punctured_prod_array_.get
+18427603991115128833
+punctured_prod_array_.get
+18424789181084147713
+punctured_prod_array_.get
+4611686265722552321
+punctured_prod_array_.get
+4611686225255981057
+punctured_prod_array_.get
+4611686188211986433
+punctured_prod_array_.get
+6883089961158877185
+punctured_prod_array_.get
+6888725457272815617
+punctured_prod_array_.get
+6893884315096137729
+punctured_prod_array_.get
+6824340543538659329
+punctured_prod_array_.get
+18153623074132459520
+punctured_prod_array_.get
+3165960173592248320
+punctured_prod_array_.get
+6625146899877855232
+punctured_prod_array_.get
+4894005424363143168
+punctured_prod_array_.get
+423405700998815745
+punctured_prod_array_.get
+2305843009213489153
+punctured_prod_array_.get
+1024
+punctured_prod_array_.get
+68719230977
+punctured_prod_array_.get
+68719403009
+punctured_prod_array_.get
+2305843009213243393
+punctured_prod_array_.get
+2305843009213317121
+punctured_prod_array_.get
+4611686081173585921
+punctured_prod_array_.get
+4611686070906003457
+punctured_prod_array_.get
+4611686188211986433
+punctured_prod_array_.get
+11238451399421329408
+punctured_prod_array_.get
+4033008654977335296
+punctured_prod_array_.get
+9796279171872194560
+punctured_prod_array_.get
+6893884315096137729
+punctured_prod_array_.get
+2305843009213489153
+punctured_prod_array_.get
+1024
+punctured_prod_array_.get
+2305843009213554689
+punctured_prod_array_.get
+2305843009213317121
+punctured_prod_array_.get
+18446145943679008768
+punctured_prod_array_.get
+18445125596888432640
+punctured_prod_array_.get
+4611686070906003457
+punctured_prod_array_.get
+2305843009213489153
+punctured_prod_array_.get
+1024
+Line 133 --> Set encryption parameters and print
+/
+| Encryption parameters :
+|   scheme: BFV
+|   poly_modulus_degree: 4096
+|   coeff_modulus size: 109 (36 + 36 + 37) bits
+|   plain_modulus: 1024
+\
+68719403009
+68719230977
+137438822401
+Parameter validation (success): valid
+
+~~~~~~ A naive way to calculate 4(x^2+1)(x+1)^2. ~~~~~~
+Line 215 --> Express x = 6 as a plaintext polynomial 0x6.
+Express x = 6 as a plaintext polynomial 0x6.
+Line 229 --> Encrypt x_plain to x_encrypted.
+Encrypt x_plain to x_encrypted.
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+In divide and round q last inplace
+In divide and round q last inplace
+in scaling variant add 
+in scaling variant add 
+    + size of freshly encrypted x: 2
+    + noise budget in freshly encrypted x: is_ntt_form
+0
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+55 bits
+    + decryption of x_encrypted: Line 286 --> Compute x_sq_plus_one (x^2+1).
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in scaling variant add 
+in scaling variant add 
+    + size of x_sq_plus_one: 3
+    + noise budget in x_sq_plus_one: is_ntt_form
+0
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+33 bits
+    + decryption of x_sq_plus_one: is_ntt_form
+0
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+0x25 ...... Correct.
+Line 316 --> Compute x_plus_one_sq ((x+1)^2).
+in scaling variant add 
+in scaling variant add 
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+    + size of x_plus_one_sq: 3
+    + noise budget in x_plus_one_sq: is_ntt_form
+0
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+33 bits
+    + decryption of x_plus_one_sq: is_ntt_form
+0
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+0x31 ...... Correct.
+Line 331 --> Compute encrypted_result (4(x^2+1)(x+1)^2).
+here in plain 
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+    + size of encrypted_result: 5
+    + noise budget in encrypted_result: is_ntt_form
+0
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+4 bits
+NOTE: Decryption can be incorrect if noise budget is zero.
+
+~~~~~~ A better way to calculate 4(x^2+1)(x+1)^2. ~~~~~~
+Line 369 --> Generate relinearization keys.
+Line 377 --> Compute and relinearize x_squared (x^2),
+             then compute x_sq_plus_one (x^2+1)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+    + size of x_squared: 3
+here in relinearize
+decomp_modulus_size
+2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+Make check
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+Make check
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+Make check
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+Make check
+encrypted_size
+2
+16384
+4096
+2
+check coeff modulus
+68719403009
+68719230977
+In divide and round q last inplace
+In divide and round q last inplace
+    + size of x_squared (after relinearization): 2
+in scaling variant add 
+    + noise budget in x_sq_plus_one: is_ntt_form
+0
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+18 bits
+    + decryption of x_sq_plus_one: is_ntt_form
+0
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+0x25 ...... Correct.
+Line 402 --> Compute x_plus_one (x+1),
+             then compute and relinearize x_plus_one_sq ((x+1)^2).
+in scaling variant add 
+in scaling variant add 
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+    + size of x_plus_one_sq: 3
+here in relinearize
+decomp_modulus_size
+2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+Make check
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+Make check
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+Make check
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+Make check
+    + noise budget in x_plus_one_sq: is_ntt_form
+0
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+33 bits
+    + decryption of x_plus_one_sq: is_ntt_form
+0
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+in inverse ntt negacyclic harvey (flag = 0)
+mul_root_scalar in ntt (flag = 0)
+inverse ntt negacyclic before corrupt 2
+0x31 ...... Correct.
+Line 416 --> Compute and relinearize encrypted_result (4(x^2+1)(x+1)^2).
+here in plain 
