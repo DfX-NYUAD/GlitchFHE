@@ -66,6 +66,7 @@ We perform GlitchFHE
 
 #### __Installation Instructions__
 
+- The modified SEAL directories are provided in ./cryptonets/seal_standalone_bfv_attack/e3_seal.372/SEAL/ and ./cryptonets/seal_standalone_ckks_attack/e3_seal.372/SEAL/
 - Please follow instructions ./cryptonets/seal_standalone_bfv_attack/e3_seal.372/SEAL/README.md and ./cryptonets/seal_standalone_ckks_attack/e3_seal.372/SEAL/README.md to build SEAL respectively for attacks on BFV and CKKS-based cryptonets
 
 - Note that we have modified the corresponding SEAL repositories to enable Fault injection
