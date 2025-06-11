@@ -14,9 +14,8 @@ We peform GlitchFHE on the CKKS and BFV implementations of polynomial evaluation
 
 #### __Installation Instructions__
 
-- Follow the instructions to install SEAL-3.6 from https://github.com/microsoft/SEAL/tree/3.6.0
-- Copy the modified SEAL repository from ./polynomial_evaluation/SEAL for the installation. We have modified evaluator.cpp and rns.cpp codes for GlitchFHE attack in ./polynomial_evaluation/SEAL/native/src/
-
+- The modified SEAL library has been provided in ./polynomial_evaluation/SEAL directory. We have modified evaluator.cpp and rns.cpp codes for GlitchFHE attack in ./polynomial_evaluation/SEAL/native/src/
+- Follow instructions in ./polynomial_evaluation/SEAL/README.md to build SEAL
 
 #### __File Information__
 
@@ -67,7 +66,7 @@ We perform GlitchFHE
 
 #### __Installation Instructions__
 
-- Please follow instructions in https://github.com/microsoft/SEAL/tree/3.7.2 to install SEAL in the repository ./cryptonets/seal_standalone_bfv_attack/e3_seal.372/ and ./cryptonets/seal_standalone_ckks_attack/e3_seal.372/
+- Please follow instructions ./cryptonets/seal_standalone_bfv_attack/e3_seal.372/SEAL/README.md and ./cryptonets/seal_standalone_ckks_attack/e3_seal.372/SEAL/README.md to build SEAL respectively for attacks on BFV and CKKS-based cryptonets
 
 - Note that we have modified the corresponding SEAL repositories to enable Fault injection
 
