@@ -102,7 +102,7 @@ We perform GlitchFHE
 
 #### __Instructions for Running the Code__
 
-- cp ./Image_Processing/EVA/examples/
+- cd ./Image_Processing/EVA/examples/
 - python image_processing.py 
 
 
