@@ -14,7 +14,7 @@ We peform GlitchFHE on the CKKS and BFV implementations of polynomial evaluation
 
 #### __Installation Instructions__
 
-- The modified SEAL library has been provided in ./polynomial_evaluation/SEAL directory. We have modified evaluator.cpp and rns.cpp codes for GlitchFHE attack in ./polynomial_evaluation/SEAL/native/src/
+- The modified SEAL library has been provided in ./polynomial_evaluation/SEAL directory. We have modified evaluator.cpp and rns.cpp codes for GlitchFHE attack in ./polynomial_evaluation/SEAL/native/src/seal/
 - Follow instructions in ./polynomial_evaluation/SEAL/README.md to build SEAL
 
 #### __File Information__
@@ -42,7 +42,7 @@ In ./polynomial_evaluation/SEAL/native/examples/1_bfv_basics.cpp, set the values
 
 #### __Attacking CKKS-based polynomial evaluation__
 
-In ./polynomial_evaluation/SEAL/native/examples/4_bfv_basics.cpp, set the values for the following variables
+In ./polynomial_evaluation/SEAL/native/examples/4_ckks_basics.cpp, set the values for the following variables
 
 
 - flag     - Set it to 1 to enable fault injection, else set it to 0
